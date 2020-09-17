@@ -47,6 +47,8 @@ public class Main
              * Doubling that result will give us the random integer between 2 and 10.
              */
             int randomInt = 2 * (random.nextInt(5) + 1);
+
+            // Update ArrayList by adding random number
             randomNumbers.add(randomInt);
 
             if (randomInt > highestRandom) {
@@ -58,6 +60,7 @@ public class Main
             }
 
             /*
+             * Check numbers the user types in are positive integers
              * I learned how to use do while and try catch methods for input validation
              * from past assignment
              * https://github.com/vio9j6l/IA04/blob/master/src/Helper.java
@@ -94,6 +97,7 @@ public class Main
                 incorrect++;
             }
 
+            // Check userInput for Y and N
             do {
                 System.out.print("Another number? ");
                 userInput = keyboard.nextLine();
